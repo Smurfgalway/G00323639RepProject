@@ -8,11 +8,15 @@
 <body align="center" background="http://nba.co.ke/wp-content/uploads/2016/08/supermarket-consumers-impact1.jpg">
 <h1 color='red'>Project stuff</h1>
 <div class="container-fluid">
-	<form>
+	<form action="/data" method="POST">
 	  <div class="form-group">
 		<label for="formGroupExampleInput">Item</label>
-		<input type="text" class="form-control" id="Item" placeholder="Item">
+        <br>
+		<input type="text" class="form-control" name="name" id="name" placeholder="Enter name of Item">
+        <br>
+         <input type="text" class="form-control" name="price" id="price" placeholder="price"> 
 	  </div>
+        <button type="submit" class="btn btn-primary">Submit item</button>
 	</form>
 </div>
 </body>
