@@ -1,18 +1,25 @@
 # G00323639RepProject
 
 <h1>Shopping Cart Web App</h1>
+<h3>App overview</h3>
 Able to:
 - add times and their price to the database.
 - store the data added.
-- Display what is in the Database(Cart)
+- Display what is in the Database/Shopping cart
 - get the total sum of all the prices of the items added to the kart
 
 
 <h2>How to run</h2>
 - Download the repo from github
+'''
 $ cd C:\Users\<saved directory>\G00323639RepProject
+''''
 - to run the application you:
+''''
 $ python webapp.py
+''''
+
+
 <h2> Dev diary/overall thoughts:</h2>
 
 kicking off this project I was lost as to what programs to use and how to approach it. I had never coded in python, git was something I had only learned last year, and html I hadnt properly used since first year so it all seemed like a big panic at first. I went online to code academy brushed up on their python tutorials got familiar with the language. I also used the inclass exercises as a reference and learning point the flask ones and flask docs online were crucial to my learning, making and understanding of this project. When I finally sat down to do the project occured a few problems. Where to start? what libaries to use? what database to use?
@@ -38,14 +45,14 @@ If I could do this again I would defintely start this earlier and do way more re
 
 <h1>REFERENCES + REASEARCH:</h1>
 <h3> Adapted from below sources along with methods and practices learn from sources below</h3>
-https://github.com/data-representation/example-sqlite
-https://github.com/data-representation/example-project
-http://flask.pocoo.org/
-http://jinja.pocoo.org/
-https://www.python.org/doc/
-https://www.codecademy.com/learn/python
-data rep moodle = flask exercises
-https://v4-alpha.getbootstrap.com/getting-started/introduction/
-http://www.w3schools.com/
-http://stackoverflow.com/
+- https://github.com/data-representation/example-sqlite
+- https://github.com/data-representation/example-project
+- http://flask.pocoo.org/
+- http://jinja.pocoo.org/
+- https://www.python.org/doc/
+- https://www.codecademy.com/learn/python
+- data rep moodle = flask exercises
+- https://v4-alpha.getbootstrap.com/getting-started/introduction/
+- http://www.w3schools.com/
+- http://stackoverflow.com/
 
