@@ -3,27 +3,39 @@
 
 <head>
 <meta charset="utf-8">
-
+    <!-- calls in style sheet from bootstrap improves the aesthic of the whole webpage -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
-<body align="center" background="http://nba.co.ke/wp-content/uploads/2016/08/supermarket-consumers-impact1.jpg">
-<h1>Welcome to the Supermarket</h1>
-h1  {color: red;}
-<div class="container-fluid">
+    
+<body align="center" background="http://cdn.wallpapersafari.com/68/69/3AfOPT.jpg">
+    <h1 class="text-danger" class="display-4">Welcome to the Supermarket</h1>
+<div class="well">
+      <!-- is the form that takes in the item and its price and stores it into my database -->
 	<form action="/data" method="POST">
 	  <div class="form-group">
-		<label for="formGroupExampleInput">Item</label>
+		<label for="formGroupExampleInput">Add items to your shopping cart</label>
         <br>
 		<input type="text" class="form-control" name="name" id="name" placeholder="Enter name of Item">
         <br>
-         <input type="number" class="form-control" name="price" id="price" placeholder="price"> 
+         <input type="number" class="form-control" name="price" id="price" placeholder="price" step="any">
 	  </div>
         <button type="submit" class="btn btn-primary">Submit item</button>
 	</form>
-    <form action="/add" method="POST">
-        <div>
-          <button type="submit" class="btn btn-primary">calculate price</button>
+      <!-- this button gets from the flask root in my webapp.py and displays the contents of price of the cart -->
+    <form action="/add" method="GET">
+        <div clas="form-group">
+        <label for="formGroupExampleInput">Clicking this button will display the total price in your Cart</label>
+          <button type="submit" class="btn btn-danger">calculate price</button>
         </div>
 	</form>
+    <!-- this button gets from the flask root in my webapp.py and displays the contents of the cart -->
+    <form action="/show" method="GET">
+    <div class="form-group"> 
+        <label for="formGroupExampleInput">Clicking this button will display whats in your Cart</label>
+          <button type="submit" class="btn btn-default">Show contents of Cart</button>
+    </div>
+    </form>
 </div>
 </body>
 </html>
+<!-- references: bootstrap docs, w3schools, stack overflow, google images-->
