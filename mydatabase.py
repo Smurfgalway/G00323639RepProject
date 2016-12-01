@@ -1,12 +1,14 @@
-import sqlite3
+import sqlite3 #imports sqlite3 from python lib
 
-conn = sqlite3.connect('data/thisdata.db')
+conn = sqlite3.connect('data/thisdata.db') #connects to my data base
 
-c = conn.cursor()
+c = conn.cursor() #creates my cursor
+
+#This is dummy hard coded table I used to test my database with, wanted to test if I was getting a database filled with things 
+#-----------------------------------------------------------------------------------------------------------------------------
 
 #def create_table():
-	#c.execute('CREATE TABLE IF NOT EXISTS Contents(number INT, name TEXT, price REAL)')
-	
+	#c.execute('CREATE TABLE IF NOT EXISTS Contents(number INT, name TEXT, price REAL)')	
 #def data_entry():
 #	c.execute("INSERT INTO 	Contents VALUES(1, 'ham', 2)")
 #	c.execute("INSERT INTO 	Contents VALUES(2, 'cheese', 2)")
@@ -25,20 +27,21 @@ c = conn.cursor()
 #	c.execute("INSERT INTO 	Contents VALUES(15, 'coke', 2.5)")
 #	c.execute("INSERT INTO 	Contents VALUES(16, 'potatos', 4)")
 #	c.execute("INSERT INTO 	Contents VALUES(17, 'carrots', 2)")
-#	c.execute("INSERT INTO 	Contents VALUES(18, 'beans', 0.95)")
-	
-#	conn.commit()	
-
+#   c.execute("INSERT INTO 	Contents VALUES(18, 'beans', 0.95)")
+#conn.commit()	
+#data_entry()
+#---------------------------------------------------------------------------------------------------------------------------
+#here is my actual table that gets populated by the calls from the flask and the information from the form in the html file
 def create():
-	c.execute('CREATE TABLE IF NOT EXISTS Cart( name TEXT, price TEXT)')
+	c.execute('CREATE TABLE IF NOT EXISTS Cart( name TEXT, price REAL)')
     
 conn.commit()
-    
-#data_entry()
 
 c.close
 conn.close
 
 if __name__ == "__main__":
-    create()
+    create() #calls the create function the table will only be created if i
+    
+#code adapted from https://github.com/data-representation/example-sqlite
 	
