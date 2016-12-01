@@ -11,13 +11,13 @@ Able to:
 
 <h2>How to run</h2>
 - Download the repo from github
-'''
+```
 $ cd C:\Users\<saved directory>\G00323639RepProject
-''''
+```
 - to run the application you:
-''''
+```
 $ python webapp.py
-''''
+```
 
 
 <h2> Dev diary/overall thoughts:</h2>
