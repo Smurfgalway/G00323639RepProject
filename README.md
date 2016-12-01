@@ -27,16 +27,17 @@ If I could do this again I would defintely start this earlier and do way more re
 
 
 <h1>Used to make this project:</h1>
-Python 3.5 and its libary
-SQLLite3 used as my database
-Cmder
-Brackets
-Notepad++
-BootStrap
-Flask
-Anaconda for python 3.5
+- Python 3.5 and its libary
+- SQLLite3 used as my database
+- Cmder
+- Brackets
+- Notepad++
+- BootStrap
+- Flask
+- Anaconda for python 3.5
 
-<h1>REFERENCES + REASEARCH: Code Adapted from below sources along with methods and practices learn from sources below</h1>
+<h1>REFERENCES + REASEARCH:</h1>
+<h3> Adapted from below sources along with methods and practices learn from sources below</h3>
 https://github.com/data-representation/example-sqlite
 https://github.com/data-representation/example-project
 http://flask.pocoo.org/
